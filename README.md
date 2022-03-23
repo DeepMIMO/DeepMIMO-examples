@@ -2,7 +2,7 @@
 In this repository, you can find simple examples for DeepMIMOv2 MATLAB, python and 5G NR versions.
 
 ## Available Paper Implementations with DeepMIMO dataset
-Below, we provide the papers using DeepMIMO dataset with their implementations.
+Below, we provide the list of papers that use DeepMIMO dataset and have an available implementation.
 | Paper | Details | Scenario |
 | :-: | :-: | :-: |
 | [Deep Learning Coordinated Beamforming for Highly-Mobile Millimeter Wave Systems](https://ieeexplore.ieee.org/document/8395149) | [link](https://deepmimo.net/applications/coordinated-beamforming/) | O1_60 |
