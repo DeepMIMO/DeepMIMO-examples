@@ -102,7 +102,7 @@ scatter3(bs_loc(1), bs_loc(2), bs_loc(3), 'bo');
 xlabel('x (m)');
 ylabel('y (m)');
 zlabel('z (m)');
-title('Path Loss (dBm)')
+title('Path Loss (dB)')
 colorbar()
 
 %%  Reconstruct the CDL channel object
