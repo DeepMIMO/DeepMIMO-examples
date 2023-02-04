@@ -103,5 +103,5 @@ im = ax.scatter(loc_x, loc_y, c=pathloss)
 ax.set_xlabel('x (m)')
 ax.set_ylabel('y (m)')
 fig.colorbar(im, ax=ax)
-ttl = plt.title('UE Grid Path-loss (dBm)')
+ttl = plt.title('UE Grid Path-loss (dB)')
 
