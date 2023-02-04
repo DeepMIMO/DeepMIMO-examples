@@ -69,7 +69,7 @@ colorbar()
 xlabel('x (m)');
 ylabel('y (m)');
 zlabel('z (m)');
-title('Path Loss (dBm)')
+title('Path Loss (dB)')
 legend('UE', 'BS', 'Location', 'best')
 
 % 2D Grid Visualization
@@ -78,6 +78,6 @@ scatter(ue_locs(:, 1), ue_locs(:, 2), [], ue_pl);
 colorbar()
 xlabel('x (m)');
 ylabel('y (m)');
-title('UE Grid Path Loss (dBm)')
+title('UE Grid Path Loss (dB)')
 xlim([min(ue_locs(:, 1)), max(ue_locs(:, 1))])
 ylim([min(ue_locs(:, 2)), max(ue_locs(:, 2))])
