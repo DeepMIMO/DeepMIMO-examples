@@ -112,15 +112,16 @@ colorbar()
 %
 ue = 1;
 channel_path_parameters = DeepMIMO_dataset{bs}.user{ue}.path_params;
-txSize = dataset_params.CDL_5G.bsAntenna{bs};
-txOrientation = dataset_params.CDL_5G.bsOrientation{bs}; % BS Orientation from dataset params
+txSize = dataset_params.CDL_5G.bsAntSize(bs, :);
+txOrientation = dataset_params.CDL_5G.bsArrayOrientation(bs, :); % BS Orientation from dataset params
 txPolarization = dataset_params.CDL_5G.bsPolarization+1; % BS Polarization for BS-UE channel
 rxSize = dataset_params.CDL_5G.ueAntSize;
 rxOrientation = channel_path_parameters.rxArrayOrientation; % UE Orientation from path params
 rxPolarization = dataset_params.CDL_5G.uePolarization+1; % UE Polarization for BS-UE channel
 
-CDL_channel = construct_DeepMIMO_CDL_channel(txSize, txOrientation, txPolarization, rxSize, rxOrientation, rxPolarization, dataset_params, channel_path_parameters);
+CDL_channel = construct_DeepMIMO_CDL_channel(txSize, txOrientation, rxSize, rxOrientation, channel_path_parameters,  dataset_params);
 
 % Visualize the RX and TX antennas with MATLAB 5G Toolbox functions:
 CDL_channel.displayChannel('LinkEnd','Tx');
 CDL_channel.displayChannel('LinkEnd','Rx');
+
