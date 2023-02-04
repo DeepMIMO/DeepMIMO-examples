@@ -1,9 +1,9 @@
 %% Generate dataset
-
+addpath(genpath('DeepMIMO-5GNR'))
 %
 % Load the provided dataset parameters
 %
-dataset_params = read_params('NR_example_1_params.m');
+dataset_params = read_params('Example_1_params.m');
 
 %
 % Generate the dataset with the loaded parameters
