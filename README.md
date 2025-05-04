@@ -1,3 +1,13 @@
+## ⚠️ Archived Repository Notice
+
+**This repository has been archived** and is no longer maintained. It contains code for DeepMIMOv2.
+
+All future versions are now maintained in a new unified repository, with DeepMIMOv4 in pre-release:  
+
+👉 [DeepMIMO Unified Repository](https://github.com/DeepMIMO/DeepMIMO)
+
+---
+
 ## Examples Repository
 In this repository, you can find simple examples for DeepMIMOv2 MATLAB, python and 5G NR versions.
 
